@@ -1,0 +1,60 @@
+2026-10-05 09:00:00 INFO user login succeeded: user_id=1000 from 192.168.1.20 in 80ms
+2026-10-05 09:00:04 INFO user login succeeded: user_id=1007 from 192.168.1.21 in 93ms
+2026-10-05 09:00:08 INFO user login succeeded: user_id=1014 from 192.168.1.22 in 106ms
+2026-10-05 09:00:12 INFO user login succeeded: user_id=1021 from 192.168.1.23 in 119ms
+2026-10-05 09:00:16 INFO user login succeeded: user_id=1028 from 192.168.1.24 in 132ms
+2026-10-05 09:00:20 INFO user login succeeded: user_id=1035 from 192.168.1.25 in 145ms
+2026-10-05 09:00:24 INFO user login succeeded: user_id=1042 from 192.168.1.26 in 158ms
+2026-10-05 09:00:28 INFO user login succeeded: user_id=1049 from 192.168.1.27 in 171ms
+2026-10-05 09:00:32 INFO user login succeeded: user_id=1056 from 192.168.1.28 in 184ms
+2026-10-05 09:00:36 INFO user login succeeded: user_id=1063 from 192.168.1.29 in 197ms
+2026-10-05 09:00:40 INFO user login succeeded: user_id=1070 from 192.168.1.30 in 210ms
+2026-10-05 09:00:44 INFO user login succeeded: user_id=1077 from 192.168.1.31 in 223ms
+2026-10-05 09:01:00 INFO GET /api/orders status=200 latency=30ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567890
+2026-10-05 09:01:07 INFO GET /api/orders status=200 latency=59ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567891
+2026-10-05 09:01:14 INFO GET /api/orders status=200 latency=88ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567892
+2026-10-05 09:01:21 INFO GET /api/orders status=200 latency=117ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567893
+2026-10-05 09:01:28 INFO GET /api/orders status=200 latency=146ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567894
+2026-10-05 09:01:35 INFO GET /api/orders status=200 latency=175ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567895
+2026-10-05 09:01:42 INFO GET /api/orders status=200 latency=54ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567896
+2026-10-05 09:01:49 INFO GET /api/orders status=200 latency=83ms req_id=a1b2c3d4-e5f6-7890-abcd-ef1234567897
+2026-10-05 09:02:00 WARN disk usage at 82% on /dev/sda1
+2026-10-05 09:02:11 WARN disk usage at 83% on /dev/sda1
+2026-10-05 09:02:22 WARN disk usage at 84% on /dev/sda1
+2026-10-05 09:03:00 ERROR db query timeout after 3000ms: SELECT * FROM orders WHERE status='pending'
+2026-10-05 09:03:09 ERROR db query timeout after 3500ms: SELECT count(*) FROM users
+2026-10-05 09:03:18 ERROR db query timeout after 4000ms: UPDATE inventory SET stock=stock-1 WHERE sku='A-100'
+2026-10-05 09:03:27 ERROR db query timeout after 4500ms: DELETE FROM sessions WHERE expired=1
+2026-10-05 09:03:36 ERROR db query timeout after 5000ms: SELECT * FROM events WHERE ts > '2026-10-01'
+2026-10-05 09:04:00 ERROR connection refused: redis 10.0.0.5:6379
+2026-10-05 09:04:13 ERROR connection refused: redis 10.0.0.6:6379
+2026-10-05 09:05:01 ERROR unhandled exception in worker-3: ValueError: invalid literal for int(): 'abc'
+2026-10-05 09:06:00 INFO cache hit ratio 0.90 for region 'orders'
+2026-10-05 09:06:05 INFO cache hit ratio 0.91 for region 'orders'
+2026-10-05 09:06:10 INFO cache hit ratio 0.92 for region 'orders'
+2026-10-05 09:06:15 INFO cache hit ratio 0.93 for region 'orders'
+2026-10-05 09:06:20 INFO cache hit ratio 0.94 for region 'orders'
+2026-10-05 09:06:25 INFO cache hit ratio 0.95 for region 'orders'
+2026-10-05 09:07:00 INFO scheduled job 'cleanup' finished in 12s
+2026-10-05 09:07:08 INFO scheduled job 'cleanup' finished in 15s
+2026-10-05 09:07:16 INFO scheduled job 'cleanup' finished in 18s
+2026-10-05 09:07:24 INFO scheduled job 'cleanup' finished in 21s
+INFO: health check ok
+this line has no level and no timestamp at all
+2026-10-05 09:08:00 DEBUG connection pool stats: active=12 idle=8
+2026-10-05 09:08:00 WARN slow query detected: 700ms > threshold 500ms
+2026-10-05 09:08:06 WARN slow query detected: 820ms > threshold 500ms
+2026-10-05 09:08:12 WARN slow query detected: 940ms > threshold 500ms
+2026-10-05 09:09:00 INFO user login succeeded: user_id=2000 from 10.0.2.30 in 90ms
+2026-10-05 09:09:05 INFO user login succeeded: user_id=2011 from 10.0.2.31 in 107ms
+2026-10-05 09:09:10 INFO user login succeeded: user_id=2022 from 10.0.2.32 in 124ms
+2026-10-05 09:09:15 INFO user login succeeded: user_id=2033 from 10.0.2.33 in 141ms
+2026-10-05 09:09:20 INFO user login succeeded: user_id=2044 from 10.0.2.34 in 158ms
+2026-10-05 09:09:25 INFO user login succeeded: user_id=2055 from 10.0.2.35 in 175ms
+2026-10-05 09:10:00 ERROR db query timeout after 3200ms: SELECT * FROM audit_log WHERE day='2026-10-04'
+2026-10-05 09:10:07 ERROR db query timeout after 3600ms: SELECT * FROM audit_log WHERE day='2026-10-05'
+2026-10-05 09:10:14 ERROR db query timeout after 4000ms: SELECT * FROM audit_log WHERE day='2026-10-04'
+2026-10-05 09:10:21 ERROR db query timeout after 4400ms: SELECT * FROM audit_log WHERE day='2026-10-05'
+2026-10-05 09:11:00 WARN retrying failed task 'sync-orders' attempt 1/3
+2026-10-05 09:11:09 WARN retrying failed task 'sync-orders' attempt 2/3
+2026-10-05 09:11:18 WARN retrying failed task 'sync-orders' attempt 3/3
